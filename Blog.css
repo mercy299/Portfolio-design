@@ -7,20 +7,11 @@
     --background: white;
     --hamburger-margin: 8px;
     --animation-timing: 200ms ease-in-out;
-    /* --hamburger-height: calc(var(--bar-height) * 3 + var(--harmburger-gap) *2); */
 }
 body{
     padding: 0;
-    /* margin: auto; */
     font-family: 'Heebo', sans-serif;
 }
-/* .nav{
-    display:flex;
-    justify-content: flex-end;
-    gap: 1.5em;
-    margin: auto;
-    width: 95%;
-} */
 .nav .nav-menu{
     display:flex;
     justify-content: flex-end;
@@ -30,13 +21,12 @@ body{
 }
 .nav a {
     color: black;
-    /* border: 1px solid red; */
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
 }
-.nav a:first-child{
-    color: #FF6464;
+.nav a:hover{
+    color: aqua;
 }
 .nav-link{
     transition: 0.7s ease;
@@ -45,9 +35,6 @@ body{
     display: none;
     cursor: pointer;
 }
-/* .sidebar{
-    display: none;
-} */
 .full{
     margin: auto;
     max-width: var(--max-width);
@@ -80,8 +67,6 @@ footer{
     display: flex;
     gap: 1em;
     justify-content: center;
-    /* margin: auto;
-    max-width: var(--max-width); */
 }
 
 @media screen and (max-width: 500px){
@@ -95,11 +80,7 @@ footer{
     }
     .hamburger-menu{
         display: flex;
-        /* flex-direction: column; */
-        /* gap: var(--hamburger-gap); */
         width: max-content;
-        /* position:absolute; */
-        /* top:var(--hamburger-margin); */
         right: 100%;
         z-index : 2;
         cursor: pointer;
@@ -178,11 +159,8 @@ footer{
         position: fixed;
         right: 100%;
         top: 0px;
-        /* gap: 2; */
         flex-direction: column;
         background: #333;
-        /* background-color: #262626; */
-        /* width: 100%; */
         text-align: center;
         transition: 0.3s;
         height: 678px;
@@ -194,21 +172,15 @@ footer{
     .nav .nav-menu{
         gap: 15px;
     }
-    /* .full{
-        /* margin: -1em; 
-    } */
     h1{
         margin: 0.1em 0;
     }
     h3{
         font-size: 22px;
     }
-    /* .box1{
-        /* padding: 0.2em; 
-    } */
-}
-.nav a{
-    font-size: 35px;
-    color: beige;
-    font-weight: 700;
+    .nav a{
+        font-size: 35px;
+        color: beige;
+        font-weight: 700;
+    }
 }

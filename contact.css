@@ -32,10 +32,6 @@ section{
 .nav a {
     text-decoration: none;
 }
-.nav a:first-child{
-    color: #FF6464;
-}
-
 .nav-link{
     transition: 0.7s ease;
 }
