@@ -177,13 +177,16 @@ footer{
     .nav-menu{
         position: fixed;
         right: 100%;
-        top: 70px;
+        top: 0px;
         /* gap: 2; */
         flex-direction: column;
+        background: #333;
         /* background-color: #262626; */
         /* width: 100%; */
-        /* text-align: center; */
+        text-align: center;
         transition: 0.3s;
+        height: 678px;
+        font-size: 35px;
     }
     .nav-menu.active{
         right: 0;
@@ -203,4 +206,9 @@ footer{
     /* .box1{
         /* padding: 0.2em; 
     } */
+}
+.nav a{
+    font-size: 35px;
+    color: beige;
+    font-weight: 700;
 }
